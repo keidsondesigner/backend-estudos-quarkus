@@ -1,6 +1,6 @@
 # httpclient-quarkus
 
-Projeto de estudo em **Java 17 + Quarkus 3.33 LTS** mostrando como consumir APIs HTTP externas, usando consulta de CEP como exemplo:
+Projeto de estudo em **Java 17  +  Quarkus 3.33 LTS** mostrando como consumir APIs HTTP externas, usando consulta de CEP como exemplo:
 
 - **ViaCEP** (`https://viacep.com.br`) – provedor principal
 - **BrasilAPI** (`https://brasilapi.com.br`) – fallback quando o ViaCEP falha
