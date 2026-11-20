@@ -1,0 +1,27 @@
+### Arquivo para a extensão "REST Client" do VS Code ou o HTTP Client do IntelliJ
+
+@base = http://localhost:8080
+
+### Busca principal (cache + fallback)
+GET {{base}}/ceps/69005-040
+
+### Busca por endereço
+GET {{base}}/ceps?uf=AM&cidade=Manaus&logradouro=Djalma
+
+### Somente ViaCEP (REST Client)
+GET {{base}}/ceps/69005040/viacep
+
+### Somente BrasilAPI (REST Client)
+GET {{base}}/ceps/69005040/brasilapi
+
+### ViaCEP via java.net.http.HttpClient (síncrono)
+GET {{base}}/ceps/69005040/jdk
+
+### ViaCEP via java.net.http.HttpClient (assíncrono)
+GET {{base}}/ceps/69005040/jdk-async
+
+### CEP inválido -> 400
+GET {{base}}/ceps/123
+
+### CEP inexistente -> 404
+GET {{base}}/ceps/99999999
